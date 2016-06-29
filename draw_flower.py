@@ -4,6 +4,12 @@ def draw_square(some_turtle):
     
     some_turtle.color("yellow")
     some_turtle.shape("turtle")
+import turtle
+
+def draw_square(some_turtle):
+    
+    some_turtle.color("yellow")
+    some_turtle.shape("turtle")
     some_turtle.speed(30)
     for i in range(1,5):
         some_turtle.forward(150)
@@ -27,8 +33,14 @@ def draw_art():
         square.left(5)
         if(i is 37):
             square.left(85)
-            square.forward(300)
-            square.backward(300)
+            square.forward(350)
+            square.right(90)
+            square.forward(5)
+            square.left(90)
+            square.backward(350)
+            square.right(90)
+            square.backward(5)
+            square.left(90)
             square.right(85)
         
     window.exitonclick()
